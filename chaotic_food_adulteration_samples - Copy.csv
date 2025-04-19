@@ -1,0 +1,501 @@
+sample_id,food_type,adulterant,adulteration_level,is_adulterated
+1,Wheat,Urea,2.9,False
+2,Wheat,Jaggery Syrup,4.17,True
+3,Wheat,Chalk Powder,1.91,True
+4,Honey,Sugar Syrup,1.51,True
+5,Wheat,Starch,3.13,True
+6,Honey,Detergent,3.35,True
+7,Honey,Water,2.39,True
+8,Milk,Unknown,0.5,True
+9,Turmeric,Water,0.27,True
+10,Honey,Unknown,1.94,True
+11,Chili Powder,Soapstone,2.2,True
+12,Wheat,Detergent,0.54,True
+13,Honey,Starch,3.14,False
+14,Wheat,Unknown,0.71,True
+15,Wheat,Unknown,4.61,True
+16,Wheat,Chalk Powder,4.54,True
+17,Milk,Detergent,4.11,False
+18,Turmeric,None,3.22,True
+19,Wheat,None,3.91,True
+20,Wheat,Unknown,2.54,True
+21,Turmeric,Unknown,2.34,True
+22,Wheat,Unknown,1.83,True
+23,Milk,Sugar Syrup,2.96,True
+24,Chili Powder,Salt Powder,1.64,True
+25,Milk,Chalk Powder,1.26,False
+26,Milk,Sugar Syrup,0.91,False
+27,Chili Powder,None,2.51,True
+28,Honey,Metanil Yellow,4.36,True
+29,Chili Powder,Sugar Syrup,1.91,True
+30,Turmeric,Soapstone,0.86,True
+31,Chili Powder,Metanil Yellow,1.16,False
+32,Honey,Jaggery Syrup,1.63,True
+33,Wheat,Sugar Syrup,2.97,True
+34,Milk,Unknown,0.68,True
+35,Wheat,Sugar Syrup,4.2,True
+36,Milk,Urea,0.1,False
+37,Turmeric,Detergent,0.6,True
+38,Turmeric,Unknown,2.33,True
+39,Turmeric,Detergent,3.68,True
+40,Milk,Metanil Yellow,0.37,False
+41,Milk,Soapstone,3.72,True
+42,Turmeric,Detergent,3.87,True
+43,Chili Powder,Metanil Yellow,3.56,True
+44,Turmeric,Water,2.69,True
+45,Honey,Jaggery Syrup,1.04,True
+46,Turmeric,Detergent,2.4,True
+47,Turmeric,Brick Powder,2.83,True
+48,Milk,Detergent,4.08,True
+49,Turmeric,Sugar Syrup,1.91,True
+50,Honey,Starch,3.29,True
+51,Chili Powder,Detergent,4.02,True
+52,Milk,Chalk Powder,0.1,False
+53,Chili Powder,Starch,3.6,True
+54,Wheat,Chalk Powder,4.99,True
+55,Honey,Detergent,4.22,True
+56,Honey,Starch,2.99,True
+57,Milk,Metanil Yellow,2.05,True
+58,Milk,Urea,0.57,False
+59,Honey,Starch,3.45,True
+60,Turmeric,Detergent,2.4,True
+61,Honey,Soapstone,0.69,False
+62,Wheat,Detergent,0.42,True
+63,Wheat,Sugar Syrup,2.18,False
+64,Turmeric,Metanil Yellow,3.15,True
+65,Milk,None,4.89,True
+66,Chili Powder,None,0.48,True
+67,Wheat,Urea,0.37,False
+68,Turmeric,Brick Powder,3.57,True
+69,Wheat,Sugar Syrup,4.46,False
+70,Wheat,Urea,3.25,True
+71,Wheat,Chalk Powder,1.37,False
+72,Honey,Unknown,0.88,False
+73,Turmeric,Sugar Syrup,2.06,True
+74,Wheat,Brick Powder,2.11,True
+75,Wheat,Starch,4.22,False
+76,Chili Powder,Water,2.13,True
+77,Turmeric,Jaggery Syrup,3.24,True
+78,Milk,Urea,1.26,True
+79,Chili Powder,Urea,3.29,True
+80,Turmeric,Jaggery Syrup,4.42,True
+81,Milk,Urea,2.51,True
+82,Turmeric,Chalk Powder,0.72,True
+83,Milk,Water,3.66,True
+84,Honey,Unknown,0.96,True
+85,Wheat,Water,1.62,False
+86,Honey,Metanil Yellow,2.86,True
+87,Honey,Brick Powder,4.39,True
+88,Chili Powder,Water,1.09,True
+89,Milk,Chalk Powder,4.82,True
+90,Wheat,Brick Powder,2.56,True
+91,Wheat,Brick Powder,3.92,True
+92,Honey,Chalk Powder,2.06,True
+93,Chili Powder,Chalk Powder,3.56,False
+94,Wheat,Detergent,1.7,True
+95,Turmeric,Chalk Powder,0.54,False
+96,Chili Powder,Starch,3.74,False
+97,Turmeric,Metanil Yellow,3.99,True
+98,Chili Powder,Chalk Powder,4.32,True
+99,Chili Powder,Metanil Yellow,4.74,True
+100,Honey,Metanil Yellow,4.47,True
+101,Milk,Sugar Syrup,2.62,False
+102,Honey,Soapstone,4.78,True
+103,Wheat,Urea,0.12,True
+104,Chili Powder,None,2.21,True
+105,Chili Powder,Unknown,2.04,True
+106,Chili Powder,None,1.13,False
+107,Chili Powder,None,2.98,True
+108,Milk,Starch,4.1,True
+109,Honey,Brick Powder,1.13,True
+110,Chili Powder,Brick Powder,1.09,True
+111,Milk,Unknown,4.37,True
+112,Honey,Jaggery Syrup,0.65,True
+113,Honey,Water,1.91,True
+114,Chili Powder,Sugar Syrup,3.27,True
+115,Milk,Sugar Syrup,2.11,True
+116,Honey,Soapstone,0.12,True
+117,Chili Powder,Soapstone,2.14,True
+118,Honey,Starch,1.78,True
+119,Turmeric,Chalk Powder,0.93,False
+120,Turmeric,Sugar Syrup,4.94,True
+121,Milk,Brick Powder,1.55,True
+122,Honey,Brick Powder,1.47,False
+123,Wheat,Water,3.53,True
+124,Milk,Salt Powder,3.84,False
+125,Turmeric,Salt Powder,2.95,True
+126,Wheat,Jaggery Syrup,1.4,True
+127,Honey,Unknown,0.37,True
+128,Chili Powder,Starch,3.42,False
+129,Honey,Chalk Powder,1.3,True
+130,Honey,None,3.04,True
+131,Wheat,Soapstone,4.1,True
+132,Honey,Jaggery Syrup,0.78,False
+133,Honey,Urea,2.8,True
+134,Honey,Starch,4.43,True
+135,Wheat,Metanil Yellow,1.29,True
+136,Milk,Salt Powder,3.66,True
+137,Honey,Salt Powder,0.9,False
+138,Milk,Sugar Syrup,2.98,True
+139,Milk,Urea,0.01,False
+140,Chili Powder,Soapstone,0.29,False
+141,Wheat,Sugar Syrup,1.04,False
+142,Honey,Brick Powder,1.41,True
+143,Milk,Chalk Powder,4.66,True
+144,Honey,Detergent,1.79,True
+145,Chili Powder,Chalk Powder,3.88,True
+146,Wheat,Brick Powder,1.88,True
+147,Milk,Jaggery Syrup,3.31,True
+148,Turmeric,Chalk Powder,2.19,True
+149,Wheat,Water,2.87,True
+150,Chili Powder,Urea,3.49,True
+151,Chili Powder,None,4.6,True
+152,Turmeric,Starch,3.23,True
+153,Turmeric,Detergent,3.45,True
+154,Honey,Unknown,2.88,True
+155,Milk,Soapstone,3.9,True
+156,Wheat,Detergent,4.98,True
+157,Wheat,Metanil Yellow,1.11,False
+158,Chili Powder,Chalk Powder,3.52,False
+159,Milk,Brick Powder,0.01,True
+160,Turmeric,None,2.57,True
+161,Chili Powder,Unknown,3.21,True
+162,Turmeric,Soapstone,0.55,True
+163,Turmeric,Unknown,3.05,True
+164,Honey,Urea,3.26,True
+165,Honey,Urea,1.1,False
+166,Chili Powder,Salt Powder,3.87,True
+167,Honey,Soapstone,4.62,True
+168,Chili Powder,Brick Powder,3.84,True
+169,Honey,Starch,0.89,False
+170,Chili Powder,Detergent,4.4,False
+171,Milk,None,2.06,True
+172,Honey,Starch,1.76,True
+173,Honey,Unknown,2.98,True
+174,Turmeric,Detergent,4.54,False
+175,Wheat,Water,2.57,True
+176,Turmeric,Metanil Yellow,0.91,False
+177,Wheat,Chalk Powder,0.67,True
+178,Turmeric,None,0.88,False
+179,Chili Powder,Jaggery Syrup,2.28,True
+180,Wheat,Detergent,0.52,True
+181,Honey,Starch,2.52,False
+182,Turmeric,Sugar Syrup,2.67,True
+183,Turmeric,Unknown,4.77,True
+184,Honey,Water,0.27,True
+185,Chili Powder,Water,2.88,True
+186,Wheat,Jaggery Syrup,0.27,True
+187,Wheat,Salt Powder,2.72,True
+188,Honey,Starch,2.92,True
+189,Turmeric,Chalk Powder,3.17,True
+190,Milk,Detergent,0.46,False
+191,Chili Powder,Salt Powder,1.86,True
+192,Milk,None,4.88,True
+193,Honey,Jaggery Syrup,1.4,False
+194,Wheat,Brick Powder,1.84,True
+195,Chili Powder,Salt Powder,1.29,True
+196,Honey,None,2.92,True
+197,Chili Powder,Sugar Syrup,1.08,True
+198,Wheat,Jaggery Syrup,4.53,True
+199,Chili Powder,Jaggery Syrup,2.73,True
+200,Chili Powder,Metanil Yellow,3.8,False
+201,Chili Powder,Soapstone,1.28,False
+202,Turmeric,Soapstone,4.84,True
+203,Wheat,None,1.06,True
+204,Honey,Jaggery Syrup,3.66,True
+205,Chili Powder,Starch,4.34,True
+206,Milk,Soapstone,0.04,False
+207,Milk,Chalk Powder,0.99,False
+208,Wheat,Sugar Syrup,3.16,True
+209,Honey,Jaggery Syrup,4.32,True
+210,Chili Powder,Chalk Powder,4.48,True
+211,Wheat,Brick Powder,0.65,True
+212,Chili Powder,Sugar Syrup,0.48,False
+213,Wheat,Sugar Syrup,3.22,True
+214,Chili Powder,Starch,2.9,True
+215,Chili Powder,Urea,4.66,True
+216,Turmeric,Sugar Syrup,1.0,True
+217,Milk,Chalk Powder,4.64,True
+218,Chili Powder,Jaggery Syrup,2.91,False
+219,Turmeric,Jaggery Syrup,0.96,False
+220,Wheat,Salt Powder,2.23,True
+221,Wheat,Salt Powder,4.76,True
+222,Wheat,None,1.75,True
+223,Milk,Urea,4.78,False
+224,Wheat,Starch,4.51,False
+225,Milk,None,0.95,True
+226,Chili Powder,Water,0.74,True
+227,Chili Powder,Water,4.7,True
+228,Honey,Chalk Powder,1.24,True
+229,Wheat,Urea,3.44,True
+230,Wheat,Starch,3.2,True
+231,Milk,Brick Powder,4.24,True
+232,Wheat,Urea,3.71,True
+233,Turmeric,Sugar Syrup,1.65,True
+234,Chili Powder,Urea,1.49,True
+235,Honey,Salt Powder,1.93,True
+236,Wheat,Chalk Powder,0.52,True
+237,Wheat,Starch,3.0,False
+238,Honey,None,1.26,False
+239,Chili Powder,Salt Powder,3.15,True
+240,Chili Powder,Brick Powder,0.92,False
+241,Turmeric,Sugar Syrup,2.35,True
+242,Chili Powder,Water,0.18,False
+243,Turmeric,Salt Powder,3.2,False
+244,Chili Powder,Chalk Powder,3.11,True
+245,Turmeric,Soapstone,3.29,True
+246,Wheat,Soapstone,4.28,True
+247,Honey,Unknown,3.73,True
+248,Turmeric,Chalk Powder,2.77,True
+249,Milk,Soapstone,1.53,True
+250,Honey,Starch,1.6,True
+251,Chili Powder,Unknown,0.28,False
+252,Wheat,Salt Powder,0.88,True
+253,Milk,Soapstone,3.18,True
+254,Chili Powder,Unknown,1.73,True
+255,Honey,Starch,1.37,False
+256,Wheat,Chalk Powder,0.46,True
+257,Wheat,Detergent,2.24,True
+258,Milk,Soapstone,1.84,True
+259,Turmeric,Sugar Syrup,3.07,True
+260,Turmeric,Chalk Powder,1.61,True
+261,Wheat,Jaggery Syrup,0.43,False
+262,Wheat,None,0.35,True
+263,Milk,Urea,0.8,True
+264,Turmeric,Brick Powder,3.63,True
+265,Honey,Urea,2.21,True
+266,Chili Powder,Brick Powder,0.57,True
+267,Turmeric,Unknown,2.4,True
+268,Wheat,None,3.92,True
+269,Milk,Jaggery Syrup,2.76,True
+270,Wheat,Brick Powder,0.49,False
+271,Turmeric,Jaggery Syrup,1.13,False
+272,Turmeric,Sugar Syrup,1.48,True
+273,Wheat,Urea,3.0,True
+274,Honey,Brick Powder,4.59,True
+275,Wheat,Salt Powder,1.84,True
+276,Turmeric,Unknown,4.76,True
+277,Chili Powder,Brick Powder,2.55,True
+278,Chili Powder,Urea,3.93,True
+279,Honey,Salt Powder,0.45,True
+280,Honey,None,0.75,True
+281,Turmeric,Sugar Syrup,1.44,True
+282,Milk,Water,0.45,True
+283,Chili Powder,Starch,0.68,True
+284,Wheat,Urea,4.83,True
+285,Honey,Water,2.86,True
+286,Chili Powder,Chalk Powder,0.92,True
+287,Wheat,Soapstone,0.64,False
+288,Milk,Sugar Syrup,1.15,False
+289,Milk,Soapstone,1.84,True
+290,Turmeric,None,0.15,False
+291,Wheat,Chalk Powder,0.26,False
+292,Wheat,Urea,2.88,True
+293,Turmeric,None,1.09,True
+294,Wheat,Urea,4.29,True
+295,Wheat,Jaggery Syrup,3.94,True
+296,Turmeric,Urea,1.2,False
+297,Chili Powder,Soapstone,4.07,True
+298,Chili Powder,Jaggery Syrup,4.87,True
+299,Honey,Metanil Yellow,3.49,True
+300,Milk,Jaggery Syrup,1.06,True
+301,Wheat,Jaggery Syrup,0.29,False
+302,Honey,Salt Powder,1.92,True
+303,Milk,Detergent,3.01,True
+304,Chili Powder,Detergent,0.75,True
+305,Milk,Detergent,1.53,True
+306,Chili Powder,Urea,1.21,True
+307,Honey,Salt Powder,2.02,True
+308,Chili Powder,Urea,2.1,False
+309,Honey,Starch,3.15,False
+310,Chili Powder,Jaggery Syrup,4.94,True
+311,Turmeric,Metanil Yellow,0.96,True
+312,Honey,Water,0.39,False
+313,Milk,Sugar Syrup,0.23,False
+314,Honey,None,0.67,True
+315,Turmeric,None,3.88,True
+316,Milk,Brick Powder,4.02,True
+317,Honey,Urea,0.56,False
+318,Honey,Detergent,4.5,True
+319,Wheat,Unknown,1.19,True
+320,Milk,Jaggery Syrup,1.66,True
+321,Milk,Unknown,2.29,True
+322,Milk,None,3.99,True
+323,Milk,Sugar Syrup,2.85,True
+324,Wheat,Soapstone,2.69,True
+325,Wheat,Sugar Syrup,4.87,True
+326,Wheat,Unknown,1.13,False
+327,Milk,Jaggery Syrup,3.12,False
+328,Wheat,Starch,0.96,True
+329,Turmeric,Unknown,1.83,True
+330,Turmeric,Water,0.14,False
+331,Honey,Detergent,4.79,True
+332,Honey,Salt Powder,2.85,True
+333,Wheat,Soapstone,3.1,True
+334,Milk,Chalk Powder,0.23,False
+335,Turmeric,Chalk Powder,4.62,True
+336,Turmeric,None,2.1,True
+337,Wheat,None,0.14,True
+338,Wheat,Starch,4.42,True
+339,Wheat,Sugar Syrup,0.42,True
+340,Turmeric,None,3.42,True
+341,Honey,Jaggery Syrup,1.36,False
+342,Wheat,Metanil Yellow,2.56,True
+343,Wheat,Unknown,0.89,False
+344,Honey,Starch,1.43,False
+345,Honey,None,2.25,True
+346,Honey,Brick Powder,1.12,True
+347,Turmeric,Soapstone,1.55,True
+348,Wheat,Chalk Powder,4.73,True
+349,Milk,Metanil Yellow,3.72,True
+350,Milk,Urea,1.9,True
+351,Milk,Salt Powder,0.01,False
+352,Milk,Detergent,3.62,True
+353,Chili Powder,Detergent,0.11,False
+354,Milk,Salt Powder,0.52,True
+355,Wheat,Salt Powder,1.38,False
+356,Milk,Sugar Syrup,4.49,True
+357,Wheat,Detergent,0.87,True
+358,Milk,None,1.31,False
+359,Milk,None,2.57,True
+360,Wheat,Soapstone,3.53,False
+361,Chili Powder,Salt Powder,3.11,True
+362,Turmeric,Metanil Yellow,1.3,False
+363,Wheat,Detergent,3.5,True
+364,Turmeric,Metanil Yellow,0.83,True
+365,Turmeric,Starch,3.57,True
+366,Milk,Jaggery Syrup,4.47,True
+367,Turmeric,Starch,3.76,True
+368,Honey,Jaggery Syrup,4.36,True
+369,Turmeric,Chalk Powder,0.54,True
+370,Chili Powder,Metanil Yellow,1.13,False
+371,Wheat,Starch,1.66,True
+372,Wheat,Starch,1.1,True
+373,Chili Powder,Jaggery Syrup,1.07,False
+374,Chili Powder,Sugar Syrup,0.23,False
+375,Wheat,Urea,0.39,True
+376,Wheat,Brick Powder,1.72,True
+377,Wheat,Chalk Powder,3.39,True
+378,Milk,Soapstone,0.36,True
+379,Turmeric,None,0.81,True
+380,Chili Powder,Soapstone,1.72,False
+381,Milk,Jaggery Syrup,1.05,True
+382,Honey,Metanil Yellow,3.86,True
+383,Milk,Unknown,4.8,False
+384,Milk,Unknown,2.69,True
+385,Wheat,Chalk Powder,1.04,True
+386,Turmeric,Soapstone,0.74,False
+387,Honey,Soapstone,3.84,True
+388,Chili Powder,Brick Powder,4.54,False
+389,Wheat,None,3.71,True
+390,Honey,Unknown,1.08,False
+391,Honey,None,2.62,True
+392,Honey,Unknown,4.23,True
+393,Milk,Detergent,1.97,True
+394,Chili Powder,Jaggery Syrup,4.43,False
+395,Honey,Unknown,1.71,True
+396,Honey,Urea,1.34,True
+397,Turmeric,Chalk Powder,0.59,True
+398,Honey,Soapstone,2.07,True
+399,Turmeric,Starch,4.71,False
+400,Turmeric,Urea,1.33,True
+401,Chili Powder,Soapstone,2.63,True
+402,Honey,Urea,2.44,True
+403,Turmeric,None,1.92,True
+404,Turmeric,Sugar Syrup,3.19,False
+405,Chili Powder,Metanil Yellow,2.05,True
+406,Milk,Starch,3.4,True
+407,Honey,Urea,3.09,True
+408,Honey,Metanil Yellow,2.21,True
+409,Honey,Soapstone,2.2,True
+410,Chili Powder,Water,3.87,True
+411,Wheat,Water,4.29,False
+412,Milk,Chalk Powder,1.48,True
+413,Chili Powder,Detergent,0.8,True
+414,Turmeric,Detergent,2.67,True
+415,Chili Powder,Urea,3.52,True
+416,Honey,Sugar Syrup,4.42,True
+417,Wheat,Unknown,2.02,True
+418,Wheat,Chalk Powder,3.62,True
+419,Honey,Brick Powder,1.73,True
+420,Turmeric,Starch,0.77,False
+421,Honey,None,3.26,True
+422,Chili Powder,Sugar Syrup,1.55,True
+423,Chili Powder,Soapstone,2.12,True
+424,Milk,Soapstone,2.63,True
+425,Milk,Water,2.51,True
+426,Chili Powder,Urea,0.06,True
+427,Turmeric,Salt Powder,4.07,True
+428,Honey,Sugar Syrup,0.17,False
+429,Milk,Metanil Yellow,0.86,True
+430,Chili Powder,Metanil Yellow,3.48,True
+431,Wheat,Sugar Syrup,2.69,True
+432,Wheat,None,3.49,True
+433,Turmeric,Salt Powder,4.8,True
+434,Turmeric,Urea,4.08,True
+435,Turmeric,Starch,0.61,True
+436,Wheat,Jaggery Syrup,1.74,True
+437,Honey,Sugar Syrup,1.16,False
+438,Wheat,None,0.6,False
+439,Milk,Urea,1.62,False
+440,Honey,Unknown,4.98,True
+441,Chili Powder,Urea,2.58,True
+442,Honey,Water,3.42,True
+443,Chili Powder,Jaggery Syrup,4.05,True
+444,Milk,Brick Powder,0.7,True
+445,Chili Powder,Starch,3.67,True
+446,Milk,Salt Powder,0.16,False
+447,Chili Powder,Detergent,3.96,True
+448,Honey,Detergent,1.36,False
+449,Turmeric,Detergent,0.22,True
+450,Honey,Soapstone,0.6,False
+451,Milk,Brick Powder,3.79,True
+452,Turmeric,Detergent,0.93,True
+453,Milk,Brick Powder,2.18,False
+454,Honey,Unknown,3.77,False
+455,Turmeric,Urea,3.21,True
+456,Chili Powder,Starch,0.67,True
+457,Wheat,Soapstone,0.85,True
+458,Wheat,Starch,0.76,True
+459,Honey,Sugar Syrup,3.71,True
+460,Turmeric,Chalk Powder,4.63,True
+461,Turmeric,Water,4.82,True
+462,Milk,Salt Powder,1.81,True
+463,Honey,Water,2.13,True
+464,Wheat,Sugar Syrup,2.32,True
+465,Turmeric,Urea,3.21,True
+466,Chili Powder,Unknown,1.66,True
+467,Turmeric,Starch,4.52,True
+468,Wheat,Jaggery Syrup,1.23,True
+469,Chili Powder,Unknown,2.0,True
+470,Turmeric,Chalk Powder,3.69,True
+471,Chili Powder,Starch,3.44,True
+472,Chili Powder,Starch,0.9,True
+473,Wheat,Detergent,3.81,False
+474,Chili Powder,Urea,2.5,True
+475,Wheat,Salt Powder,4.65,True
+476,Honey,Urea,1.52,True
+477,Wheat,Water,2.7,True
+478,Wheat,Urea,0.53,False
+479,Turmeric,Starch,2.94,True
+480,Turmeric,Chalk Powder,3.84,True
+481,Milk,Unknown,1.95,True
+482,Milk,Urea,3.98,True
+483,Honey,Unknown,2.34,True
+484,Milk,Detergent,2.63,True
+485,Turmeric,Soapstone,2.96,True
+486,Chili Powder,Detergent,4.94,True
+487,Honey,Water,2.61,True
+488,Honey,Salt Powder,3.79,True
+489,Honey,Starch,1.21,True
+490,Wheat,Chalk Powder,0.38,True
+491,Milk,Brick Powder,3.0,False
+492,Chili Powder,Soapstone,0.18,True
+493,Wheat,None,3.37,True
+494,Chili Powder,Sugar Syrup,4.09,True
+495,Chili Powder,Sugar Syrup,4.38,True
+496,Milk,Brick Powder,3.71,True
+497,Wheat,Urea,3.22,True
+498,Milk,Soapstone,4.86,True
+499,Turmeric,Brick Powder,0.38,True
+500,Honey,Unknown,0.88,True
