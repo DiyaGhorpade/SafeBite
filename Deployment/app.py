@@ -55,6 +55,14 @@ with tab1:
     }])
 
     try:
+        # Debugging: Print user input
+        st.write("User Input:")
+        st.write(user_input)
+
+        # Debugging: Check pipeline structure
+        st.write("Pipeline Structure:")
+        st.write(adulteration)
+
         # Directly predict using the pipeline (preprocessing + model)
         adulteration_pred = adulteration.predict(user_input)
 
