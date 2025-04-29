@@ -60,7 +60,8 @@ with tab1:
            # preprocessed_input = adulteration.named_steps['preprocessor'].transform(user_input)
 
             # Make prediction
-            adulteration_pred = adulteration.predict(preprocessed_input)
+            # adulteration_pred = adulteration.predict(preprocessed_input)
+            adulteration_pred = adulteration.predict(user_input)
 
             # Display the prediction
             st.write(f"Adulteration Prediction: {adulteration_pred[0]}")
