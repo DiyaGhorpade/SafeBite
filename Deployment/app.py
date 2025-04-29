@@ -54,22 +54,22 @@ with tab1:
         'adulteration_level': adulteration_level,
     }])
 
-    # Get prediction and probabilities
-    adulteration_pred = adulteration.predict(user_input)
-    adulteration_prob = adulteration.predict_proba(user_input)
-    
-    # Display results with formatting
-    st.subheader("Prediction Results")
-    
-    if adulteration_pred[0] == 1:
-        st.error(f"🚨 Adulteration Detected! (Confidence: {adulteration_prob[0][1]*100:.1f}%)")
-    else:
-        st.success(f"✅ No Adulteration Detected (Confidence: {adulteration_prob[0][0]*100:.1f}%)")
-    
-    # Optional: Show detailed probabilities
-    with st.expander("See detailed probabilities"):
-        st.write(f"Probability of being clean: {adulteration_prob[0][0]*100:.2f}%")
-        st.write(f"Probability of adulteration: {adulteration_prob[0][1]*100:.2f}%")
+        # Get prediction and probabilities
+        adulteration_pred = adulteration.predict(user_input)
+        adulteration_prob = adulteration.predict_proba(user_input)
+        
+        # Display results with formatting
+        st.subheader("Prediction Results")
+        
+        if adulteration_pred[0] == 1:
+            st.error(f"🚨 Adulteration Detected! (Confidence: {adulteration_prob[0][1]*100:.1f}%)")
+        else:
+            st.success(f"✅ No Adulteration Detected (Confidence: {adulteration_prob[0][0]*100:.1f}%)")
+        
+        # Optional: Show detailed probabilities
+        with st.expander("See detailed probabilities"):
+            st.write(f"Probability of being clean: {adulteration_prob[0][0]*100:.2f}%")
+            st.write(f"Probability of adulteration: {adulteration_prob[0][1]*100:.2f}%")
 
 # Contaminant Level Prediction Tab
 with tab2:
