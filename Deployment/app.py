@@ -48,11 +48,11 @@ with tab1:
 
     # Code to insert data into model
     if st.button("Predict Adulteration", key="btn_a"):
-        user_input = pd.DataFrame({
+        user_input = pd.DataFrame([{
             'Adulterant': adulterant,
             'FoodType': food_type,
             'AdulterationLevel': adulteration_level,
-        })
+        }])
 
         # Ensure the input matches the model's expected format
         try:
