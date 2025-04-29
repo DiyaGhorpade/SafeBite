@@ -45,30 +45,30 @@ y_pred = pipeline.predict(X_test)
 print("Classification Report:\n")
 print(classification_report(y_test, y_pred))
 
-# # Function to take user input and predict
-# def predict_user_sample(pipeline):
-#     print("\nEnter the details of the food sample for prediction:")
+# Function to take user input and predict
+def predict_user_sample(pipeline):
+    print("\nEnter the details of the food sample for prediction:")
 
-#     food_type = input("Food Type (Milk/Wheat/Honey/Chili Powder/Turmeric): ")
-#     adulterant = input("Adulterant (Water/Detergent/Starch/Urea/Soapstone/Chalk Powder/Sugar Syrup/Jaggery Syrup/Brick Powder/Salt Powder/Metanil Yellow/None): ")
-#     adulteration_level = float(input("Adulteration Level (e.g., 0.5, 3.2): "))
+    food_type = input("Food Type (Milk/Wheat/Honey/Chili Powder/Turmeric): ")
+    adulterant = input("Adulterant (Water/Detergent/Starch/Urea/Soapstone/Chalk Powder/Sugar Syrup/Jaggery Syrup/Brick Powder/Salt Powder/Metanil Yellow/None): ")
+    adulteration_level = float(input("Adulteration Level (e.g., 0.5, 3.2): "))
 
-#     # Create a dataframe for the input
-#     user_input = pd.DataFrame([{
-#         'food_type': food_type,
-#         'adulterant': adulterant,
-#         'adulteration_level': adulteration_level
-#     }])
+    # Create a dataframe for the input
+    user_input = pd.DataFrame([{
+        'food_type': food_type,
+        'adulterant': adulterant,
+        'adulteration_level': adulteration_level
+    }])
 
-#     # Predict
-#     prediction = pipeline.predict(user_input)[0]
+    # Predict
+    prediction = pipeline.predict(user_input)[0]
 
-#     if prediction == 1:
-#         print("\n🚨 The sample is predicted to be ADULTERATED.")
-#     else:
-#         print("\n✅ The sample is predicted to be CLEAN.")
+    if prediction == 1:
+        print("\n🚨 The sample is predicted to be ADULTERATED.")
+    else:
+        print("\n✅ The sample is predicted to be CLEAN.")
 
-# # Example usage
-# predict_user_sample(pipeline)
+# Example usage
+predict_user_sample(pipeline)
 
-dump(pipeline, 'adulterationPrediction-model.joblib')
+

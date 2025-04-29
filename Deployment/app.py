@@ -49,25 +49,22 @@ with tab1:
     # Code to insert data into model
     if st.button("Predict Adulteration", key="btn_a"):
         user_input = pd.DataFrame([{
-            'Adulterant': adulterant,
-            'FoodType': food_type,
-            'AdulterationLevel': adulteration_level,
-        }])
+        'food_type': food_type,
+        'adulterant': adulterant,
+        'adulteration_level': adulteration_level,
+    }])
 
-        # Ensure the input matches the model's expected format
-        try:
-            # Preprocess input if necessary (e.g., encoding or scaling)
-           # preprocessed_input = adulteration.named_steps['preprocessor'].transform(user_input)
+    try:
+        # Directly predict using the pipeline (preprocessing + model)
+        adulteration_pred = adulteration.predict(user_input)
 
-            # Make prediction
-            # adulteration_pred = adulteration.predict(preprocessed_input)
-            adulteration_pred = adulteration.predict(user_input)
-
-            # Display the prediction
-            st.write(f"Adulteration Prediction: {adulteration_pred[0]}")
-
-        except Exception as e:
-            st.error(f"An error occurred during prediction: {e}")
+        # Display the prediction
+        if adulteration_pred[0] == 1:
+            st.write("🚨 The sample is predicted to be ADULTERATED.")
+        else:
+            st.write("✅ The sample is predicted to be CLEAN.")
+    except Exception as e:
+        st.error(f"An error occurred during prediction: {e}")
 
 # Contaminant Level Prediction Tab
 with tab2:
