@@ -71,4 +71,4 @@ def predict_user_sample(pipeline):
 # Example usage
 predict_user_sample(pipeline)
 
-
+dump(pipeline, "final-adulteration-model.joblib")

@@ -19,7 +19,7 @@ def safe_load(filename):
     return load(file_path)
 
 # Load models safely
-adulteration = safe_load("adulteration-prediction-model.joblib")
+adulteration = safe_load("final-adulteration-model.joblib")
 contamination = safe_load("contamination-prediction-model.joblib")
 safety = safe_load("safety-classification-kmeans.joblib")
 
