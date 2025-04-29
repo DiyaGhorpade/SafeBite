@@ -57,7 +57,7 @@ with tab1:
         # Ensure the input matches the model's expected format
         try:
             # Preprocess input if necessary (e.g., encoding or scaling)
-            preprocessed_input = adulteration.named_steps['preprocessor'].transform(user_input)
+           # preprocessed_input = adulteration.named_steps['preprocessor'].transform(user_input)
 
             # Make prediction
             adulteration_pred = adulteration.predict(preprocessed_input)
