@@ -19,7 +19,7 @@ def safe_load(filename):
     return load(file_path)
 
 # Load models safely
-adulteration = safe_load("adulteration-prediction-model.joblib")
+adulteration = safe_load("logistic_regression_model.joblib")
 contamination = safe_load("contamination-prediction-model.joblib")
 safety = safe_load("safety-classification-kmeans.joblib")
 
@@ -35,16 +35,38 @@ tab1, tab2, tab3 = st.tabs(["Adulteration Prediction", "Contaminant Level Predic
 
 # Adulteration Prediction Tab
 with tab1:
+    # Define the select box lists for accurate input
     st.header("Adulteration Prediction")
-    feature1 = st.text_input("Enter feature 1", key="a1")
-    feature2 = st.text_input("Enter feature 2", key="a2")
-    feature3 = st.number_input("Enter feature 3", key="a3")
-    feature4 = st.number_input("Enter feature 4", key="a4")
+    Adulterant = ['Water', 'Detergent', 'Starch', 'Urea', 'Soapstone', 'Chalk Powder', 'Sugar Syrup',
+                  'Jaggery Syrup', 'Brick Powder', 'Salt Powder', 'Metanil Yellow', 'None']
+    FoodType = ['Milk', 'Wheat', 'Honey', 'Chili Powder', 'Turmeric']
 
-    if st.button("Predict Adulteration", key="btn_a"):
-        user_input = np.array([[feature1, feature2, feature3, feature4]])
-        adulteration_pred = adulteration.predict(user_input)
-        st.write(f"Adulteration Prediction: {adulteration_pred}")
+    # User inputs
+    adulterant = st.selectbox("Adulterant", Adulterant, key="a1")
+    food_type = st.selectbox("Food Type", FoodType, key="a2")
+    adulteration_level = st.number_input("Adulteration Level", key="c3")
+
+    # Code to insert data into model
+    if st.button("Predict Adulteration", key="btn_c"):
+        user_input = pd.DataFrame({
+            'Adulterant': [adulterant],
+            'FoodType': [food_type],
+            'AdulterationLevel': [adulteration_level],
+        })
+
+        # Ensure the input matches the model's expected format
+        try:
+            # Preprocess input if necessary (e.g., encoding or scaling)
+            preprocessed_input = adulteration.named_steps['preprocessor'].transform(user_input)
+
+            # Make prediction
+            adulteration_pred = adulteration.predict(preprocessed_input)
+
+            # Display the prediction
+            st.write(f"Adulteration Prediction: {adulteration_pred[0]}")
+
+        except Exception as e:
+            st.error(f"An error occurred during prediction: {e}")
 
 # Contaminant Level Prediction Tab
 with tab2:
@@ -90,6 +112,7 @@ with tab2:
                 'ContaminantName': contaminantname
         }, index = [0])
         
+        # only this part is different eveyrthing else same type. 
         preprocessed_input = contamination.named_steps['preprocessor'].transform(user_input)
         prediction_log = contamination.predict(user_input)
         prediction_original = np.expm1(prediction_log)[0]
