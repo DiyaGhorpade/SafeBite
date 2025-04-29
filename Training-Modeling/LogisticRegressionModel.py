@@ -26,7 +26,7 @@ preprocessor = ColumnTransformer(transformers=[
     ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features),
     ('num', StandardScaler(), numeric_features)
 ])
-
+print("hey lets look here")
 # Create pipeline
 pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
