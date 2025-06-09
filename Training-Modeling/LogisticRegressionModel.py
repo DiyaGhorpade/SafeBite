@@ -26,7 +26,7 @@ preprocessor = ColumnTransformer(transformers=[
     ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features),
     ('num', StandardScaler(), numeric_features)
 ])
-print("hey lets look here")
+
 # Create pipeline
 pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
@@ -68,7 +68,6 @@ def predict_user_sample(pipeline):
     else:
         print("\n✅ The sample is predicted to be CLEAN.")
 
-# Example usage
-predict_user_sample(pipeline)
+
 
 dump(pipeline, "adulteration-model-09062025.joblib")
