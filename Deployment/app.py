@@ -4,9 +4,6 @@ import numpy as np
 import pandas as pd
 import os
 
-import sklearn
-st.write("scikit-learn version:", sklearn.__version__)
-
 def find_file(filename, directory="."): 
     for root, _, files in os.walk(directory):
         if filename in files:
@@ -22,7 +19,7 @@ def safe_load(filename):
     return load(file_path)
 
 # Load models safely
-adulteration = safe_load("final-adulteration-model.joblib")
+adulteration = safe_load("adulteration-model-09062025.joblib")
 contamination = safe_load("contamination-prediction-model.joblib")
 safety = safe_load("safety-classification-kmeans.joblib")
 
